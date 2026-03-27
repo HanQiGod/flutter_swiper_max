@@ -1,0 +1,16 @@
+name: flutter_swiper_max
+description: Flutter 升级 3.35.7 之后，对 flutter_swiper_plus 插件的升级（After Flutter upgrade 3.35.7, the upgrade of flutter_swiper_plus plugins.）。
+version: 2.1.0
+homepage: https://github.com/HanQiGod/flutter_swiper_max
+
+dependencies:
+  vector_math: ^2.1.0
+  flutter:
+    sdk: flutter
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
