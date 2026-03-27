@@ -22,16 +22,7 @@ void main() {
 
     expect(find.byKey(key), findsOneWidget);
 
-    bool first = true;
-
-    await tester.tap(find.byWidgetPredicate((Widget widget) {
-      if (widget is GestureDetector && first) {
-        first = false;
-        return true;
-      }
-
-      return false;
-    }));
+    await tester.tap(find.byType(GestureDetector).first);
   });
 
   testWidgets('Control vertical', (WidgetTester tester) async {
@@ -55,15 +46,6 @@ void main() {
 
     expect(find.byKey(key), findsOneWidget);
 
-    bool first = true;
-
-    await tester.tap(find.byWidgetPredicate((Widget widget) {
-      if (widget is GestureDetector && first) {
-        first = false;
-        return true;
-      }
-
-      return false;
-    }));
+    await tester.tap(find.byType(GestureDetector).first);
   });
 }
